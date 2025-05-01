@@ -8,7 +8,7 @@ test.only('Login test', async ({ page }) => {
     const mainPage = new MainPage(page)
 
     console.log('Check elements in page')
-    await page.goto('https://www.saucedemo.com/')
+    await page.goto('/')
     
     await loginPage.checkLoginLocators()
     await loginPage.userLogin('standard_user')
